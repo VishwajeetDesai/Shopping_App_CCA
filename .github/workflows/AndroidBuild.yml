@@ -29,11 +29,11 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
 
-      - name: Bulid Release APK
-        run: ./gradlew assembleRelease
+      - name: Bulid Build APK
+        run: ./gradlew assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
           name: sample-app.apk
-          path: app/build/outputs/apk/release/app-release-unsigned.apk
+          path: app/build/outputs/apk/debug/app-dev-debug.apk
