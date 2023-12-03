@@ -46,5 +46,8 @@ jobs:
           aws-region: 'ap-south-1'
           aws-bucket: shreyashassgn3
           file-path: 'app/build/outputs/apk/debug/app-debug.apk'
+          output-file-url: 'true'
+      - name: Show URL
+        run: echo '${{ steps.upload.outputs.file-url}}'
   
 
