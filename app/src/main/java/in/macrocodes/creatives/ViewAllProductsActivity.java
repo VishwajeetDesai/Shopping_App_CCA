@@ -106,7 +106,7 @@ public class ViewAllProductsActivity extends AppCompatActivity {
             }
         });
 
-
+//
 
     }
     private void getLocalsProducts() {
