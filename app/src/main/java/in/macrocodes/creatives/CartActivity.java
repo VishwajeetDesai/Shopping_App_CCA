@@ -26,6 +26,7 @@ public class CartActivity extends AppCompatActivity {
         databaseHelper = new DatabaseHelper(this);
         arrayList = databaseHelper.getAllData();
         binding = DataBindingUtil.setContentView(this,R.layout.activity_cart);
+        //resolving issue
 
         mAdapter = new CartAdapter(this,arrayList,databaseHelper,getSupportFragmentManager());
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
